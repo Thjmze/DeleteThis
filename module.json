@@ -1,0 +1,31 @@
+{
+  "id": "stylish-login-screen",
+  "title": "Stylish Login Screen",
+  "description": "Split the login screen into image cuts. The GM assigns a user and an image to each cut; players click their portrait to log in.",
+  "version": "1.5.0",
+  "manifest": "https://raw.githubusercontent.com/Thjmze/DeleteThis/main/module.json",
+  "download": "https://raw.githubusercontent.com/Thjmze/DeleteThis/main/stylish-login-screen.zip",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "The Final Artificer"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/login.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "flags": {}
+}
