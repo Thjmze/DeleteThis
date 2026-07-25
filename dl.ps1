@@ -1,4 +1,4 @@
-$AssetsRoot = "C:\FoundryVTT\Data\assets\ZZZZZFull"
+$AssetsRoot = "C:\Users\bkmat\AppData\Local\FoundryVTT\Data\assets\ZZZZZFull"
 $FolderMap = @{
     'm' = 'Music'
     's' = 'Misc Sound Effects'
@@ -21,7 +21,7 @@ function Invoke-Download {
     Write-Host "[$key] Downloading: $Url"
 
     $template = Join-Path $destDir "%(title)s.%(ext)s"
-    $result = yt-dlp -x --audio-format mp3 --audio-quality 0 --no-playlist --restrict-filenames -o "$template" --print "after_move:filepath" $Url
+    $result = yt-dlp -x --audio-format mp3 --audio-quality 0 --no-playlist --restrict-filenames -o "$template" $Url
 
     $savedPath = $result | Select-Object -Last 1
     if ($savedPath -and (Test-Path $savedPath)) {
